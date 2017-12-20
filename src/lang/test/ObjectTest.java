@@ -1,17 +1,16 @@
-package Object;
+package lang.test;
 
 /**
  * Object测试类
- *
  * @author kevin
- * @create 2017-12-19 0:02
+ * @date 2017/12/20
+ * @Modified By:
  **/
 public class ObjectTest implements Cloneable{
 
     public static void main(String[] args) {
         Object o1 = new Object();
-        // The method clone() from the type Object is not visible
-        // Object clone = o1.clone();
+        // The method clone() from the type object is not visible
         ObjectTest x = new ObjectTest();
         try {
             // x.clone() != x
@@ -41,8 +40,10 @@ public class ObjectTest implements Cloneable{
             User u3 = new User("1","王五",39);
             System.out.println(u1.equals(u3));
             System.out.println(u1.equals(u2));
-            System.out.println(u2.hashCode());// 26081961的16进制=18DFAA9
-            System.out.println(u2.toString());// Object.User@18dfaa9
+            // 26081961的16进制= 18dfaa9
+            System.out.println(u2.hashCode());
+            // User@18dfaa9
+            System.out.println(u2.toString());
 
 
             //  JVM垃圾回收机制finalize()

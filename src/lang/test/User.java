@@ -1,10 +1,10 @@
-package Object;
+package lang.test;
 
 /**
- * equals方法覆写
- *
+ * UserBean
  * @author kevin
- * @create 2017-12-19 0:25
+ * @date 2017/12/20
+ * @Modified By:
  **/
 public class User {
 
