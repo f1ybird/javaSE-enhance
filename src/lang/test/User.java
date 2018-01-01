@@ -1,16 +1,21 @@
 package lang.test;
 
+import java.io.Serializable;
+
 /**
  * UserBean
  * @author kevin
  * @date 2017/12/20
  * @Modified By:
  **/
-public class User {
+public class User implements Cloneable,Serializable{
 
     private String uid;
     private String name;
     private int age;
+
+    public User() {
+    }
 
     public User(String uid, String name, int age) {
         this.uid = uid;
@@ -55,5 +60,10 @@ public class User {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + age;// result << 5 - result = 31 * result
         return result;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
