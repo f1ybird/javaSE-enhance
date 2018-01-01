@@ -41,7 +41,7 @@ public class ReflectTest01 {
 			//System.out.println(methodReplace.invoke(null, new Object[] {'l','x'}));// hexxo
 			
 			// 接收参数为数组时的方法反射，以main方法为例
-			// 获取main方法的参数列表，需要在run configurations中传入参数org.javase.other.Test，否则会报数组越界异常
+			// 获取main方法的参数列表，需要在run configurations中传入参数org.javase.other.ListTest，否则会报数组越界异常
 			//String clazz = args[0];
 			//Method methodMain = Class.forName(clazz).getMethod("main", String[].class);
 			//System.out.println(methodMain.invoke(null, new Object[] {new String[]{"aaa","bbb","ccc"}}));
