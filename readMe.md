@@ -23,3 +23,5 @@
     三.在多线程环境下的解决方法
     1）在使用iterator迭代的时候使用synchronized或者Lock进行同步； 
     2）使用并发容器CopyOnWriteArrayList代替ArrayList和Vector。
+    
+* 2018/01/04 接口和内部类    
